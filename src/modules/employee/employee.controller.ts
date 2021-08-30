@@ -1,7 +1,7 @@
 import { Controller, Get, Param, ParseIntPipe, Post, UsePipes, Body} from '@nestjs/common';
-import { EmployeeService } from './employee.service';
-import { Employee } from './employee.schema';
-import { CreateEmployeeDto } from './create-employee.dto'
+import { EmployeeService } from './services/employee.service';
+import { Employee } from './schemas/employee.schema';
+import { CreateEmployeeDto } from './dto/create-employee.dto'
 
 @Controller('employee')
 export class EmployeeController {

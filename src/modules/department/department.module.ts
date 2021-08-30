@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
-import { DepartmentService } from '../department/department.service';
-import { DepartmentController } from '../department/department.controller'
-import { Department, DepartmentSchema } from '../department/department.schema';
+import { DepartmentService } from './services/department.service';
+import { DepartmentController } from './department.controller'
+import { Department, DepartmentSchema } from './schemas/department.schema';
 import { MongooseModule } from '@nestjs/mongoose';
 
 @Module({

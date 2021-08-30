@@ -1,9 +1,9 @@
 import { Model } from 'mongoose';
 import { Injectable, Inject } from '@nestjs/common';
-import { CreateEmployeeDto } from './create-employee.dto'
+import { CreateEmployeeDto } from '../dto/create-employee.dto'
 import { InjectModel } from '@nestjs/mongoose';
-import { Employee, EmployeeDocument } from './employee.schema';
-import { DepartmentService } from '../department/department.service'
+import { Employee, EmployeeDocument } from '../schemas/employee.schema';
+import { DepartmentService } from '../../department/services/department.service'
 
 
 

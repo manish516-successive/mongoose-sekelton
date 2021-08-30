@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
-import { EmployeeService } from '../employee/employee.service';
-import { EmployeeController } from '../employee/employee.controller'
-import { Employee, EmployeeSchema } from '../employee/employee.schema';
+import { EmployeeService } from './services/employee.service';
+import { EmployeeController } from './employee.controller'
+import { Employee, EmployeeSchema } from './schemas/employee.schema';
 import { MongooseModule } from '@nestjs/mongoose';
-import { DepartmentModule } from './department.module'
+import { DepartmentModule } from '../department/department.module'
 
 
 

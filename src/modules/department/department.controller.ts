@@ -1,7 +1,7 @@
 import { Controller, Get, Param, ParseIntPipe, Post, UsePipes, Body} from '@nestjs/common';
-import { DepartmentService } from './department.service';
-import { Department } from './department.schema';
-import { CreateDepartmentDto } from './create-department.dto'
+import { DepartmentService } from './services/department.service';
+import { Department } from './schemas/department.schema';
+import { CreateDepartmentDto } from './dto/create-department.dto'
 
 @Controller('department')
 export class DepartmentController {
